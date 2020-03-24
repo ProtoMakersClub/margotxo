@@ -11,13 +11,13 @@
             </div>
             <div class="box">
               <div class="field">
-                <label class="label">Room Name:</label>
+                <label class="label">Saioaren izena:</label>
                 <div class="control">
                   <input v-model="room_name" class="input" type="text" placeholder="room name" />
                 </div>
               </div>
               <div class="field">
-                <label class="label">Room Password:</label>
+                <label class="label">Saioaren pasahitza:</label>
                 <div class="control">
                   <input v-model="room_password" class="input" type="text" placeholder="password" />
                 </div>
