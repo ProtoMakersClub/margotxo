@@ -1,10 +1,10 @@
 <template>
-  <section class="hero is-dark is-fullheight">
+  <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container is-mobile">
         <div v-if="!isLoading" class="columns is-centered">
           <div class="column is-half">
-            <h1 class="title is-size-2 has-text-centered">{{ $t("join_or_create_room") }}</h1>
+            <h1 class="title is-size-2 has-text-centered white-color">{{ $t("join_or_create_room") }}</h1>
             <div v-show="showErr" class="notification is-danger">
               <button @click="showErr = false" class="delete"></button>
               {{errMessage}}

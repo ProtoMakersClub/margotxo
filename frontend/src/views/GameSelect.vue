@@ -1,23 +1,24 @@
 <template>
-  <section class="hero is-dark is-fullheight">
+  <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container is-mobile">
-        <h1 class="title is-size-1 has-text-centered">Pintanary</h1>
+        <h1 class="title is-size-1 has-text-centered white-color">Margotxo</h1>
         <div v-if="!isLoading && socket.connected" class="columns">
           <div class="column">
-            <div class="box has-background-success game-select" @click="goPublic()">
+            <div class="box has-background-success game-select white-color" @click="goPublic()">
               <h1 class="is-size-1 has-text-centered">{{ $t("play_public") }}</h1>
+              <h3 align="center" class="title is-4 white-color">{{ $t("public_desc") }}</h3>
+
             </div>
             <div class="section">
-              <h3 class="title is-4">{{ $t("public_desc") }}</h3>
             </div>
           </div>
           <div class="column">
-            <div class="box has-background-warning game-select" @click="goPrivate()">
+            <div class="box has-background-success game-select white-color" @click="goPrivate()">
               <h1 class="is-size-1 has-text-centered">{{ $t("play_private") }}</h1>
+              <h3 class="title is-4 white-color" align="center">{{ $t("private_desc") }}</h3>
             </div>
             <div class="section">
-              <h3 class="title is-4">{{ $t("private_desc") }}</h3>
             </div>
           </div>
         </div>

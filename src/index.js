@@ -308,8 +308,8 @@ io.on('connection', (socket) => {
     let player_index = room.players.findIndex(function(element) {
       return element.username == socket.username;
     });
-
-    if (data.message.includes(word) && word != '') {
+    console.log("data.message: ", data.message);
+    if (data.message.toLowerCase().includes(word.toLowerCase()) && word != '') {
       if (
         !has_already_guessed &&
         socket.username != room.players[room.painter_index].username
@@ -356,7 +356,7 @@ io.on('connection', (socket) => {
     }
   });
   // CHAT EVENTS (emitted from the server only)
-  /*  
+  /*
       data example:
       data = {message: "pablo is going to draw", evt_type: " " }
       Types of chat events:

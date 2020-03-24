@@ -1,11 +1,11 @@
 <template>
-  <section class="hero is-dark is-fullheight">
+  <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container is-mobile">
         <div class="columns is-centered">
           <div class="column is-half">
-            <h1 class="title is-size-1 has-text-centered">Pintanary</h1>
-            <h1 class="subtitle is-size-3 has-text-centered">{{ $t("desc") }}</h1>
+            <h1 class="title is-size-1 has-text-centered white-color">Margotxo</h1>
+            <h1 class="subtitle is-size-3 has-text-centered white-color">{{ $t("desc") }}</h1>
             <div v-show="showErr" class="notification is-danger">
               <button @click="showErr = false" class="delete"></button>
               {{ $t("not_empty") }}
@@ -19,14 +19,14 @@
                     v-model="localPlayer"
                     class="input"
                     type="text"
-                    placeholder="player"
+                    placeholder="Jokalaria"
                     maxlength="15"
                   />
                 </div>
               </div>
-              
+
               <div class="field">
-                <div class="control">
+                <!--<div class="control">
                   <label class="radio">
                     <input type="radio" name="language" value="Español" v-model="i18n.locale" checked>
                     Español
@@ -35,8 +35,8 @@
                     <input type="radio" name="language" value="English" v-model="i18n.locale">
                     English
                   </label>
-                </div>
-                
+                </div> -->
+
               </div>
               <button
                 @click="verify_user()"
@@ -64,9 +64,9 @@ export default {
   },
   data: function() {
     return {
-      localPlayer: "player",
+      localPlayer: "Jokalaria",
       showErr: false,
-      lang: "Español",
+      lang: "Euskara",
       i18n: i18n
     };
   },
@@ -85,7 +85,7 @@ export default {
   },
   mounted(){
     //this.i18n.locale = 'es';
- 
+
   }
 };
 </script>

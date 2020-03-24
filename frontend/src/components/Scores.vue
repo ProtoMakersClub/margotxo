@@ -14,7 +14,7 @@
               </h2>
             </div>
             <h2 v-else>{{ player.username }}</h2>
-            SCORE: {{ player.score }}
+            Puntuazioa: {{ player.score }}
           </div>
           <div v-if="player.points_gained && player.points_gained !=0" class="new_points">
             <p>{{player.points_gained}}</p>

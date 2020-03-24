@@ -5,14 +5,14 @@
         <button class="leave button is-dark">{{ $t("leave_room") }}</button>
       </a>
 
-      <h1 id="game-title" class="is-size-3 level-item has-text-centered">Pintanary</h1>
+      <h1 id="game-title" class="is-size-3 level-item has-text-centered">Margotxo</h1>
 
       <div class="tags has-addons">
-        <span class="tag is-dark">Room ID</span>
+        <span class="tag is-dark">Saio zenbakia</span>
         <span class="tag is-warning">{{ this.room_id }}</span>
       </div>
     </section>
-    <div class="hero is-mobile is-dark is-fullheight">
+    <div class="hero is-mobile is-fullheight">
       <div id="game-columns">
         <Scores />
         <div id="drawing-column" class="span-col-5 span-row-85">
@@ -138,8 +138,8 @@ export default {
     leave_link: () => {
       let leave_link =
         process.env.NODE_ENV === "production"
-          ? "https://pinturillo3.herokuapp.com"
-          : "http://localhost:8080";
+          ? "/"
+          : "/";
       return leave_link;
     }
   },

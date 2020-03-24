@@ -12,6 +12,8 @@ $section-padding: 0.8rem 1.5rem;
 
 body {
   user-select: none;
+  background-image: url("/background.jpg");
+  background-position: center;
 }
 h1 {
   font-family: "Kalam", cursive;
@@ -26,5 +28,9 @@ h1 {
       color: #42b983;
     }
   }
+}
+
+.white-color {
+  color: white;
 }
 </style>
