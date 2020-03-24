@@ -13,7 +13,9 @@ const socketlink =
 
 export default new Vuex.Store({
   state: {
-    socket: io(socketlink),
+    socket: io(socketlink, {
+	transports: ['websocket']
+    }),
     localPlayer: null,
     isLoggedIn: false,
     isDrawing: false,

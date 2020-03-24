@@ -27,7 +27,9 @@ let gameState = {
 };
 
 //socket.io instantiation
-const io = require('socket.io')(server);
+const io = require('socket.io')(server, {
+  transports: ['websocket']
+});
 
 //listen on every connection
 io.on('connection', (socket) => {
